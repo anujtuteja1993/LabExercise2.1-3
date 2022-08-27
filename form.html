@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="/">Home</a>
+        <a href="./form">Form</a>
+        <a href="/form">Form</a>
+      </nav>
+    </header>
+    <main></main>
+    <form method="POST" action="http://localhost:3000/profile">
+      <div>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname"/>
+      </div>
+      <div>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"/>
+      </div>
+      <div>
+        <input type="radio" id="radio" name="radio" value="radio">
+        <label for="radio">Radio Button</label>
+      </div>
+      <div>
+        <input type="checkbox" id="checkbox" name="testCheckbox" value="checkbox">
+        <label for="checkbox">Checkbox</label>
+      </div>
+      <div>
+        <label for="selectElement">Please select an option:</label>
+        <select name="selectElement" id="selectElement">
+          <option value="option1">Option1</option>
+          <option value="option1">Option1</option>
+        </select>
+      </div>
+      <button type="submit">Submit Form</button>
+    </form>
+    <footer>Copyright 2021 &copy;</footer>
+  </body>
+</html>

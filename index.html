@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is index.html" />
+    <meta name="keywords" content="homepage, hello world" />
+    <meta name="author" content="Anuj Tuteja" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="/">Home</a>
+        <a href="./form">Form</a>
+        <a href="/form">Form</a>
+      </nav>
+    </header>
+    <main></main>
+    <h1>My HTML Learning Journey</h1>
+    <article class="my-children-are-styled">
+      <h2>Learning HTML elements like div, span, p, pre, ol, ul etc.</h2>
+      <div class="style-me1">avocado</div>
+      <div id="style-me2">kiwi</div>
+      <div class="style-me1" id="style-me2">banana</div>
+      <span>Test</span>
+      <span>Test2</span>
+      <span>Test3</span>
+      <p>p represents paragraphs</p>
+      <pre>
+      Text in         a pre element
+      is displayed in a fixed-width
+      font, and it preserves
+      both      spaces and
+      line breaks
+      </pre>
+      <ul>
+        <li>Food</li>
+        <li>Money</li>
+      </ul>
+      <ol>
+        <li>Food</li>
+        <li>Money</li>
+      </ol>
+    </article>
+    <article>
+      <h2>Tables</h2>
+      <table class="my-descendants-are-styled">
+        <thead>
+          <tr>
+            <th>First header</th>
+            <th colspan="2">Second header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>First cell - first row</td>
+            <td>Second cell - first row</td>
+          </tr>
+          <tr>
+            <td rowspan="2">First cell - second row</td>
+            <td>Second cell - second row</td>
+          </tr>
+          <tr>
+            <td>First cell - third row</td>
+            <td>Second cell - third row</td>
+          </tr>
+        </tbody>
+      </table>
+      <img src="https://picsum.photos/200/300" alt="" />
+      <video controls autoplay width="250">
+        <source src="/media/cc0-videos/flower.webm" type="video/webm" />
+        <source src="/media/cc0-videos/flower.mp4" type="video/mp4" />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <audio controls autoplay src="/media/cc0-audio/t-rex-roar.mp3">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+      <section>
+        <h3>Basic flexbox</h3>
+
+        <div class="flex-container">
+          <div class="flex-item-1 background-1 h-80">
+            <p>Hello World 1</p>
+          </div>
+          <div class="flex-item-2 background-2 h-80">
+            <p>Hello World 2</p>
+          </div>
+          <div class="flex-item-3 background-3 h-80">
+            <p>Hello World 3</p>
+          </div>
+          <div class="flex-item-4 background-4 h-80">
+            <p>Hello World 4</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Centering elements</h3>
+        <div class="m-20 flex-container flex-center h-400 background-4">
+          <p>Hello Center world!</p>
+          <div class="background-1 h-80 w-80">
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Spacing elements on the opposites sites</h3>
+        <div class="flex-container flex-space-between">
+          <div class="h-80 background-1">I'm on the left</div>
+          <div class="h-80 background-2">I'm on the right</div>
+        </div>
+      </section>
+
+      <section>
+        <h3>Wrapping items</h3>
+        <div class="flex-container flex-wrap">
+          <div class="flex-basis-item-50 h-80 background-1"></div>
+          <div class="flex-basis-item-50 h-80 background-2"></div>
+          <div class="flex-basis-item-50 h-80 background-3"></div>
+          <div class="flex-basis-item-50 h-80 background-4"></div>
+        </div>
+      </section>
+    </article>
+    <footer>Copyright 2021 &copy;</footer>
+  </body>
+</html>
